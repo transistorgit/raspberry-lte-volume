@@ -11,7 +11,7 @@ So, we got the PI looking it up and showing it on the meter. It shows the remain
 
 Hardware:
 
-You need a PI and a MCP4812 digital analog converter, which is connected by SPI serial bus. An additional LM358 opamp adapts the voltage to the 0-10V level that my meter accepts. Find the circuit in the file repos.
+You need a PI and a MCP4812 digital analogue converter, which is connected by SPI serial bus. An additional LM358 opamp adapts the voltage to the 0-10V level that my meter accepts. Find the circuit in the file repos.
 The parts cost 1-2$ for electronics and maybe 5-10$ for a meter from ebay.
 
 Software:
@@ -22,9 +22,9 @@ In the second part, I wanted also the current download rate to be displayed. On 
 
 As the password stuff is coded in java script and it is fairly complicated to get a running java script environment on the pi, I wanted to do it in pure python. I "emulated" the login process and was able to log into the router, a "Speedport LTE II", what is basically a HUAWEI product. It was nasty, because the huawei developers didn't stick to the rules and are sending some data for example not properly encoded. So you can't use the python module functions from the "requests" module in all places. Took a bit to find that out.
 
-As I didn't want to reimplement all the password encryption stuff from java script to python, I ended up grabbing my already encripted passwort from the login post http request my PC's browser sends while logging manually into the router. I added some screenshots that should help to find out how to do that.
+As I didn't want to reimplement all the password encryption stuff from java script to python, I ended up grabbing my already encripted password from the login post http request my PC's browser sends while logging manually into the router. I added some screenshots that should help to find out how to do that.
 
 Happy hacking
 Bernd
 
-PS: the scipts are currently working for customers of Deutsche Telekom, www.telekom.de
+PS: the scripts are currently working for customers of Deutsche Telekom, www.telekom.de
